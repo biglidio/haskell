@@ -1,0 +1,1 @@
+Disciplina de Haskell do 6º Ciclo de Sistemas para Internet da Faculdade de Tecnologia Rubens Lara ministrada pelo Professor Alexandre Garcia Oliveira
