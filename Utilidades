@@ -1,0 +1,33 @@
+Instalação Via Terminal --------------------------------------------------------
+
+sudo apt-get update //Atualizar lista de instalações do linux
+sudo apt-get install haskell-platform -y //Instalar o Haskell
+ghci //Executar compilador
+
+GHCI ---------------------------------------------------------------------------
+:l nomeDoModulo //Carrega um módulo. Abreviação de load
+:r //Recarrega o último módulo carregado. Abreviação de reload
+let triplo = x*3 //Cria uma função temporária em um módulo carregado
+:t x //Mostra o tipo de "x". Abreviação de type
+
+Haskell ------------------------------------------------------------------------
+repeat //Repete a expressão que o precede
+head //retorna o primeiro item de um vetor
+drop x y //retorna "y" sem os "x"s primeiros itens
+last x //retorna o último item de "x"
+tail //retorna "x" sem seu primeiro item
+take x //retorna os "x" primeiros itens de um vetor
+length x //retorna o tamanho de "x"
+reverse x //Inverte a ordem dos elementos em "x"
+"Lucas" ++ " de Figueiredo" //Concatenação
+x : y //Coloca "x" no começo de "y"
+!! //pega um elemento pelo index
+LIST COMPREHESION //Gera uma lista a partir de uma expressão
+LISTA //É composta por elementos do mesmo tipo. Tamanho pode ser infinito.
+TUPLA //Lista de elementos que podem ter tipos diferentes, mas tem tamanho finito.
+
+fst (x, y, z) //Retorna o primeiro item de uma tupla
+snd (x, y, z) //Retorna o segundo item de uma tupla
+
+Outros -------------------------------------------------------------------------
+Hoogle
