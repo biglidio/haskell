@@ -31,3 +31,8 @@ snd (x, y, z) //Retorna o segundo item de uma tupla
 
 Outros -------------------------------------------------------------------------
 Hoogle
+
+========= PATTERN MATCHING DE LISTAS ===========================================
+
+
+
