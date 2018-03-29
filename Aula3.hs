@@ -76,6 +76,7 @@ data Aluno = Aluno {
 
 matricula :: Disciplina -> Aluno -> Aluno
 matricula nova (Aluno n i c d) = Aluno n i c (nova:d)
+-- matricula (Disciplina "Design" 120) (Aluno "Lucas" 24 "SI" [Disciplina "Logica" 80])
 
 
 
