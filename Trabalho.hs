@@ -45,8 +45,8 @@ module Trabalho where
     func :: (String -> String) -> String -> String
     func f s = reverse s ++ f s
     
-        f :: String -> String
-        f x = " eh o reverso de " ++ x
+    f :: String -> String
+    f x = " eh o reverso de " ++ x
 
 
     -- Exercício 4.8
@@ -62,16 +62,16 @@ module Trabalho where
     converteParaDolar [] = []
     converteParaDolar ds = map dolarParaReal ds
 
-        realParaDolar :: Dinheiro -> Dinheiro
-        realParaDolar (Dinheiro v Real) = (Dinheiro (v/3.32) Dolar)
-        realParaDolar (Dinheiro v Dolar) = (Dinheiro v Dolar)
-        
-        dolarParaReal :: Dinheiro -> Dinheiro
-        dolarParaReal (Dinheiro v Real) = (Dinheiro v Real)
-        dolarParaReal (Dinheiro v Dolar) = (Dinheiro (v*3.32) Real)
-        
-        notDolar :: Dinheiro -> Bool
-        notDolar (Dinheiro v c) = c /= Dolar
+    realParaDolar :: Dinheiro -> Dinheiro
+    realParaDolar (Dinheiro v Real) = (Dinheiro (v/3.32) Dolar)
+    realParaDolar (Dinheiro v Dolar) = (Dinheiro v Dolar)
+    
+    dolarParaReal :: Dinheiro -> Dinheiro
+    dolarParaReal (Dinheiro v Real) = (Dinheiro v Real)
+    dolarParaReal (Dinheiro v Dolar) = (Dinheiro (v*3.32) Real)
+    
+    notDolar :: Dinheiro -> Bool
+    notDolar (Dinheiro v c) = c /= Dolar
     
     filtraDolar :: [Dinheiro] -> [Dinheiro]
     filtraDolar [] = []
@@ -81,11 +81,11 @@ module Trabalho where
     somarDolares [] = 0.0
     somarDolares ds = sum $ map retornaValor $ filter isDolar ds
     
-        isDolar :: Dinheiro -> Bool
-        isDolar (Dinheiro v c) = c == Dolar
-        
-        retornaValor :: Dinheiro -> Double
-        retornaValor (Dinheiro v c) = v
+    isDolar :: Dinheiro -> Bool
+    isDolar (Dinheiro v c) = c == Dolar
+    
+    retornaValor :: Dinheiro -> Double
+    retornaValor (Dinheiro v c) = v
     
     qtyDolares :: [Dinheiro] -> Int
     qtyDolares [] = 0
