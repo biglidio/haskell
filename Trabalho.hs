@@ -99,5 +99,3 @@ retornaValor (Dinheiro v c) = v
 qtyDolares :: [Dinheiro] -> Int
 qtyDolares [] = 0
 qtyDolares ds = length $ filter isDolar ds
-
-
