@@ -2,9 +2,17 @@ Instalação Via Terminal ------------------------------------------------------
 
 sudo apt-get update //Atualizar lista de instalações do linux
 sudo apt-get install haskell-platform -y //Instalar o Haskell
-ghci //Executar compilador
+wget -qO- https://get.haskellstack.org/ | sh
+
+STACK --------------------------------------------------------------------------
+stack new my-project
+cd my-project
+stack setup
+stack build
+stack exec my-project-exe
 
 GHCI ---------------------------------------------------------------------------
+ghci //Executar compilador
 :l nomeDoModulo //Carrega um módulo. Abreviação de load
 :r //Recarrega o último módulo carregado. Abreviação de reload
 let triplo = x*3 //Cria uma função temporária em um módulo carregado
