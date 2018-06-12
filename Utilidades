@@ -36,3 +36,11 @@ Hoogle
 
 
 
+========= CONEXÃO COM BANCO ===================================================
+
+psql -h ec2-23-23-142-5.compute-1.amazonaws.com -U gxnhjzmeoahuuv -d d7t84g8ge25cg5
+e22533fa863ae48f7da2d8a1f645c7ea84a29d56382356b27384f472f1ae319b
+
+
+========= Stack ====================================================
+stack install
